@@ -1,0 +1,22 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="2.0.3" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="2.0.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\RightOnBoard.Survey.Data\RightOnBoard.Survey.Data.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="RightOnBoard.JwtAuthTokenServer.Service">
+      <HintPath>..\..\RightOnBoard.JwtAuthTokenServer\RightOnBoard.JwtAuthTokenServer.API\bin\Debug\netcoreapp2.0\RightOnBoard.JwtAuthTokenServer.Service.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>

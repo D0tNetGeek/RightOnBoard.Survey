@@ -1,0 +1,15 @@
+networks:
+  default:
+    external:
+      name: nat
+services:
+  rightonboard.Survey.api:
+    build:
+      context: C:\Users\vinnie\source\repos\Insypher\RightOnBoard\RightOnBoard.Survey
+      dockerfile: RightOnBoard.Survey.Api\Dockerfile
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+    image: rightonboardsurveyapi
+    ports:
+    - 80/tcp
+version: '3.0'

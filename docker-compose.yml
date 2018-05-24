@@ -1,0 +1,8 @@
+version: '3'
+
+services:
+  rightonboard.Survey.api:
+    image: rightonboardsurveyapi
+    build:
+      context: .
+      dockerfile: RightOnBoard.Survey.Api\Dockerfile
