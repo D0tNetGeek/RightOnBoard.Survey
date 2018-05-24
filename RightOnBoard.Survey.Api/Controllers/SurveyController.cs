@@ -23,7 +23,7 @@ namespace RightOnBoard.Survey.Api.Controllers
         [Route("getSurveysListForAdmin")]
         public List<SurveyInfo> GetSurveysListForAdmin()
         {
-            //This is test comment
+            //This is test comment and one more.
             var surveyList = _surveyRepository.GetAdminSurveyList();
 
             return surveyList.Select(x => new SurveyInfo
