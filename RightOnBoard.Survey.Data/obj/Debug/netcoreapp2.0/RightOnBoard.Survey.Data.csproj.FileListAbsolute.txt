@@ -24,11 +24,12 @@ C:\Work\RightOnBoard\RightOnBoard.Survey\RightOnBoard.Survey.Data\bin\Debug\netc
 C:\Users\vinnie\source\repos\Insypher\RightOnBoard\RightOnBoard.Survey\RightOnBoard.Survey.Data\bin\Debug\netcoreapp2.0\RightOnBoard.Survey.Data.deps.json
 C:\Users\vinnie\source\repos\Insypher\RightOnBoard\RightOnBoard.Survey\RightOnBoard.Survey.Data\bin\Debug\netcoreapp2.0\RightOnBoard.Survey.Data.dll
 C:\Users\vinnie\source\repos\Insypher\RightOnBoard\RightOnBoard.Survey\RightOnBoard.Survey.Data\bin\Debug\netcoreapp2.0\RightOnBoard.Survey.Data.pdb
+C:\Users\vinnie\source\repos\Insypher\RightOnBoard\RightOnBoard.Survey\RightOnBoard.Survey.Data\bin\Debug\netcoreapp2.0\RightOnBoard.JwtAuthTokenServer.Service.dll
+C:\Users\vinnie\source\repos\Insypher\RightOnBoard\RightOnBoard.Survey\RightOnBoard.Survey.Data\bin\Debug\netcoreapp2.0\RightOnBoard.JwtAuthTokenServer.Service.pdb
 C:\Users\vinnie\source\repos\Insypher\RightOnBoard\RightOnBoard.Survey\RightOnBoard.Survey.Data\obj\Debug\netcoreapp2.0\RightOnBoard.Survey.Data.csproj.CoreCompileInputs.cache
 C:\Users\vinnie\source\repos\Insypher\RightOnBoard\RightOnBoard.Survey\RightOnBoard.Survey.Data\obj\Debug\netcoreapp2.0\RightOnBoard.Survey.Data.AssemblyInfoInputs.cache
 C:\Users\vinnie\source\repos\Insypher\RightOnBoard\RightOnBoard.Survey\RightOnBoard.Survey.Data\obj\Debug\netcoreapp2.0\RightOnBoard.Survey.Data.AssemblyInfo.cs
+C:\Users\vinnie\source\repos\Insypher\RightOnBoard\RightOnBoard.Survey\RightOnBoard.Survey.Data\obj\Debug\netcoreapp2.0\RightOnBoard.Survey.Data.csproj.CopyComplete
 C:\Users\vinnie\source\repos\Insypher\RightOnBoard\RightOnBoard.Survey\RightOnBoard.Survey.Data\obj\Debug\netcoreapp2.0\RightOnBoard.Survey.Data.dll
 C:\Users\vinnie\source\repos\Insypher\RightOnBoard\RightOnBoard.Survey\RightOnBoard.Survey.Data\obj\Debug\netcoreapp2.0\RightOnBoard.Survey.Data.pdb
-C:\Users\vinnie\source\repos\Insypher\RightOnBoard\RightOnBoard.Survey\RightOnBoard.Survey.Data\bin\Debug\netcoreapp2.0\RightOnBoard.JwtAuthTokenServer.Service.dll
-C:\Users\vinnie\source\repos\Insypher\RightOnBoard\RightOnBoard.Survey\RightOnBoard.Survey.Data\bin\Debug\netcoreapp2.0\RightOnBoard.JwtAuthTokenServer.Service.pdb
-C:\Users\vinnie\source\repos\Insypher\RightOnBoard\RightOnBoard.Survey\RightOnBoard.Survey.Data\obj\Debug\netcoreapp2.0\RightOnBoard.Survey.Data.csproj.CopyComplete
+C:\Users\vinnie\source\repos\Insypher\RightOnBoard\RightOnBoard.Survey\RightOnBoard.Survey.Data\obj\Debug\netcoreapp2.0\RightOnBoard.Survey.Data.csprojResolveAssemblyReference.cache

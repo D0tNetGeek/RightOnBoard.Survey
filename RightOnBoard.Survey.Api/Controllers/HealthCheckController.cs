@@ -1,7 +1,9 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Cors;
 using Microsoft.AspNetCore.Mvc;
+using RightOnBoard.JwtAuthTokenServer.Service.Models;
 using RightOnBoard.Survey.Api.Models;
 using RightOnBoard.Survey.Api.ViewModels;
 using RightOnBoard.Survey.Services.Interfaces;
@@ -10,7 +12,7 @@ namespace RightOnBoard.Survey.Api.Controllers
 {
     [Route("api/[controller]")]
     [EnableCors("CorsPolicy")]
-    //[Authorize(Policy = CustomRoles.Admin)]
+    [Authorize(Policy = CustomRoles.User)]
     public class HealthCheckController : Controller
     {
         private readonly IHealthCheckRepository _healthCheckRepository;

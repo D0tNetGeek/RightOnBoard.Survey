@@ -45,32 +45,17 @@ namespace RightOnBoard.Survey.Api
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            services.Configure<BearerTokensOptions>(options => Configuration.GetSection("BearerTokens").Bind(options));
+
+            services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
+            services.AddScoped<IAntiForgeryCookieService, AntiForgeryCookieService>();
+
             services.AddScoped<DbContext, ApplicationDbContext>();
 
             services.AddScoped<DbContextOptions<ApplicationDbContext>>();
 
             services.AddDbContext<ApplicationDbContext>(options => options.UseSqlServer(Configuration.GetConnectionString("RightOnBoardConnectionString"), b => b.MigrationsAssembly("RightOnBoard.Survey.Api")));
 
-            //services.AddDbContext<ApplicationDbContext>(options =>
-            //{
-            //    options.UseSqlServer(
-            //        Configuration.GetConnectionString("RightOnBoardConnectionString")
-            //            .Replace("|DataDirectory|", Path.Combine(Directory.GetCurrentDirectory(), "wwwroot", "app_data")),
-            //        serverDbContextOptionsBuilder =>
-            //        {
-            //            var minutes = (int)TimeSpan.FromMinutes(3).TotalSeconds;
-            //            serverDbContextOptionsBuilder.CommandTimeout(minutes);
-            //            serverDbContextOptionsBuilder.EnableRetryOnFailure();
-            //        });
-            //});
-
-            // Only needed for custom roles.
-            services.AddAuthorization(options =>
-            {
-                options.AddPolicy(CustomRoles.Admin, policy => policy.RequireRole(CustomRoles.Admin));
-                options.AddPolicy(CustomRoles.User, policy => policy.RequireRole(CustomRoles.User));
-                options.AddPolicy(CustomRoles.Editor, policy => policy.RequireRole(CustomRoles.Editor));
-            });
 
             services.AddScoped<ISecurityService, SecurityService>();
 
@@ -86,7 +71,7 @@ namespace RightOnBoard.Survey.Api
             // No interface for the error describer so we can add errors without rev'ing the interface
             services.TryAddScoped<IdentityErrorDescriber>();
 
-            //services.AddScoped<IRolesService, RolesService>();
+            services.AddScoped<IRolesService, RolesService>();
 
             services.AddScoped<IQuestionnaireRepository, QuestionnaireRepository>();
 
@@ -95,11 +80,16 @@ namespace RightOnBoard.Survey.Api
             services.AddScoped<ISurveyRepository, SurveyRepository>();
             services.AddScoped<ICompanyRepository, CompanyRepository>();
 
-            services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
-
-            
             //services.AddScoped<ITokenStoreService, TokenStoreService>();
             //services.AddScoped<ITokenValidatorService, TokenValidatorService>();
+
+            // Only needed for custom roles.
+            services.AddAuthorization(options =>
+            {
+                options.AddPolicy(CustomRoles.Admin, policy => policy.RequireRole(CustomRoles.Admin));
+                options.AddPolicy(CustomRoles.User, policy => policy.RequireRole(CustomRoles.User));
+                options.AddPolicy(CustomRoles.Editor, policy => policy.RequireRole(CustomRoles.Editor));
+            });
 
             // Needed for jwt auth.
             services
@@ -167,7 +157,7 @@ namespace RightOnBoard.Survey.Api
             });
 
             //services.AddAutoMapper();
-            services.AddMvc();//.AddFluentValidation(fv => fv.RegisterValidatorsFromAssemblyContaining<Startup>());
+            //services.AddMvc();//.AddFluentValidation(fv => fv.RegisterValidatorsFromAssemblyContaining<Startup>());
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

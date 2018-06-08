@@ -14,5 +14,6 @@ namespace RightOnBoard.Survey.Api.Models
         public DateTime? EndDate { get; set; }
         public DateTime? PublicationDate { get; set; }
         public DateTime? ExpirationDate { get; set; }
+        public string CompanyName { get; set; }
     }
 }

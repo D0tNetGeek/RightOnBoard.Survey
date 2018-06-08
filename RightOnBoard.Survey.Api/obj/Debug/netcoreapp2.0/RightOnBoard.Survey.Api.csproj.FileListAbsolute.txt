@@ -24,13 +24,13 @@ C:\Users\vinnie\source\repos\Insypher\RightOnBoard\RightOnBoard.Survey\RightOnBo
 C:\Users\vinnie\source\repos\Insypher\RightOnBoard\RightOnBoard.Survey\RightOnBoard.Survey.Api\bin\Debug\netcoreapp2.0\RightOnBoard.JwtAuthTokenServer.Service.dll
 C:\Users\vinnie\source\repos\Insypher\RightOnBoard\RightOnBoard.Survey\RightOnBoard.Survey.Api\bin\Debug\netcoreapp2.0\RightOnBoard.Survey.Data.dll
 C:\Users\vinnie\source\repos\Insypher\RightOnBoard\RightOnBoard.Survey\RightOnBoard.Survey.Api\bin\Debug\netcoreapp2.0\RightOnBoard.Survey.Services.dll
-C:\Users\vinnie\source\repos\Insypher\RightOnBoard\RightOnBoard.Survey\RightOnBoard.Survey.Api\bin\Debug\netcoreapp2.0\RightOnBoard.JwtAuthTokenServer.Service.pdb
-C:\Users\vinnie\source\repos\Insypher\RightOnBoard\RightOnBoard.Survey\RightOnBoard.Survey.Api\bin\Debug\netcoreapp2.0\RightOnBoard.Survey.Data.pdb
 C:\Users\vinnie\source\repos\Insypher\RightOnBoard\RightOnBoard.Survey\RightOnBoard.Survey.Api\bin\Debug\netcoreapp2.0\RightOnBoard.Survey.Services.pdb
+C:\Users\vinnie\source\repos\Insypher\RightOnBoard\RightOnBoard.Survey\RightOnBoard.Survey.Api\bin\Debug\netcoreapp2.0\RightOnBoard.Survey.Data.pdb
+C:\Users\vinnie\source\repos\Insypher\RightOnBoard\RightOnBoard.Survey\RightOnBoard.Survey.Api\bin\Debug\netcoreapp2.0\RightOnBoard.JwtAuthTokenServer.Service.pdb
+C:\Users\vinnie\source\repos\Insypher\RightOnBoard\RightOnBoard.Survey\RightOnBoard.Survey.Api\obj\Debug\netcoreapp2.0\RightOnBoard.Survey.Api.csprojResolveAssemblyReference.cache
 C:\Users\vinnie\source\repos\Insypher\RightOnBoard\RightOnBoard.Survey\RightOnBoard.Survey.Api\obj\Debug\netcoreapp2.0\RightOnBoard.Survey.Api.csproj.CoreCompileInputs.cache
 C:\Users\vinnie\source\repos\Insypher\RightOnBoard\RightOnBoard.Survey\RightOnBoard.Survey.Api\obj\Debug\netcoreapp2.0\RightOnBoard.Survey.Api.AssemblyInfoInputs.cache
 C:\Users\vinnie\source\repos\Insypher\RightOnBoard\RightOnBoard.Survey\RightOnBoard.Survey.Api\obj\Debug\netcoreapp2.0\RightOnBoard.Survey.Api.AssemblyInfo.cs
 C:\Users\vinnie\source\repos\Insypher\RightOnBoard\RightOnBoard.Survey\RightOnBoard.Survey.Api\obj\Debug\netcoreapp2.0\RightOnBoard.Survey.Api.csproj.CopyComplete
 C:\Users\vinnie\source\repos\Insypher\RightOnBoard\RightOnBoard.Survey\RightOnBoard.Survey.Api\obj\Debug\netcoreapp2.0\RightOnBoard.Survey.Api.dll
 C:\Users\vinnie\source\repos\Insypher\RightOnBoard\RightOnBoard.Survey\RightOnBoard.Survey.Api\obj\Debug\netcoreapp2.0\RightOnBoard.Survey.Api.pdb
-C:\Users\vinnie\source\repos\Insypher\RightOnBoard\RightOnBoard.Survey\RightOnBoard.Survey.Api\obj\Debug\netcoreapp2.0\RightOnBoard.Survey.Api.csprojResolveAssemblyReference.cache

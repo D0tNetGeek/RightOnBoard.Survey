@@ -28,8 +28,9 @@ namespace RightOnBoard.Survey.Services
 
             var surveyList = (from si in _dbContext.SurveyInfo
                               join sc in _dbContext.SurveyCompany on si.Id equals sc.SurveyId
-                              join c in _dbContext.Customers on sc.CompanyId equals c.CompanyId
-                              where sc.CompanyId == companyId && c.UserId == userId     //  "0A7CCADC-F6AA-49F6-87A0-476F43C74756"      "74f4db91-8998-4e56-80e2-f91619630269"
+                              join cust in _dbContext.Customers on sc.CompanyId equals cust.CompanyId
+                              join c in _dbContext.Company on sc.CompanyId equals c.CompanyId
+                              where sc.CompanyId == companyId && cust.UserId == userId     //  "0A7CCADC-F6AA-49F6-87A0-476F43C74756"      "74f4db91-8998-4e56-80e2-f91619630269"
                               select new SurveyInfo
                               {
                                   SurveyId = si.Id,
@@ -40,7 +41,8 @@ namespace RightOnBoard.Survey.Services
                                   StartDate = si.StartDate,
                                   EndDate = si.EndDate,
                                   ExpirationDate = si.ExpirationDate,
-                                  PublicationDate = si.PublicationDate
+                                  PublicationDate = si.PublicationDate,
+                                  CompanyName = c.CompanyName
                               });
 
             return surveyList;

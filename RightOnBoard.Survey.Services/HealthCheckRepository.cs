@@ -23,6 +23,11 @@ namespace RightOnBoard.Survey.Services
         {
             var userId = _userService.GetCurrentUserId();
 
+            if(userId == null)
+            {
+                return null;
+            }
+
             var companyId = _dbContext.Customers.FirstOrDefault(x => x.UserId == userId).CompanyId;
 
             var healthChecks = _dbContext.SurveyIteration.FromSql("SurveyIterations_GetList_ByUser @p0, @p1", companyId, userId);

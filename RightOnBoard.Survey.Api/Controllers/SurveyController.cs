@@ -1,5 +1,7 @@
-﻿using Microsoft.AspNetCore.Cors;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Cors;
 using Microsoft.AspNetCore.Mvc;
+using RightOnBoard.JwtAuthTokenServer.Service.Models;
 using RightOnBoard.Survey.Api.Models;
 using RightOnBoard.Survey.Services.Interfaces;
 using System.Collections.Generic;
@@ -9,6 +11,7 @@ namespace RightOnBoard.Survey.Api.Controllers
 {
     [Route("api/[controller]")]
     [EnableCors("CorsPolicy")]
+    //[Authorize(Policy = CustomRoles.Admin)]
     public class SurveyController : Controller
     {
         private readonly ISurveyRepository _surveyRepository;
@@ -36,7 +39,8 @@ namespace RightOnBoard.Survey.Api.Controllers
                 StartDate = x.StartDate,
                 EndDate = x.EndDate,
                 ExpirationDate = x.ExpirationDate,
-                PublicationDate = x.PublicationDate
+                PublicationDate = x.PublicationDate,
+                CompanyName = x.CompanyName
             }).ToList();
         }
     }
