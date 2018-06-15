@@ -34,13 +34,13 @@ namespace RightOnBoard.Survey.Api.Controllers
                     {
                         IterationId = checks.Id,
                         IterationName =  checks.IterationName,
-                        SurveyInfo = new SurveyInfo
+                        SurveyInfo = new SurveyViewModel
                         {
-                            SurveyId = checks.SurveyInfo.SurveyId
+                            SurveyId = checks.SurveyId
                         },
                         StartDate = checks.OpenDateTime,
-                        CompletedDate = checks.CloseDateTime,
-                        SurveyStatus = checks.SurveyStatus
+                        CompletedDate = checks.CloseDateTime//,
+                        //SurveyStatus = checks.SurveyStatus
 
                     }).ToList();
         }

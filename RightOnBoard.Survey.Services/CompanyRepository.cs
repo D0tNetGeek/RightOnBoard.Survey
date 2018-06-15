@@ -23,10 +23,10 @@ namespace RightOnBoard.Survey.Services
 
         public List<Company> GetCompaniesForAdmin()
         {
-            //var userId = _userService.GetCurrentUserId();
+            var userId = _userService.GetCurrentUserId();
 
             var companyList = (from comp in _dbContext.Company
-                               //where cust.UserId == userId
+                                where !_dbContext.Customers.Any(res=>(comp.CompanyId == res.CompanyId &&  res.UserId == userId))
                                select new Company
                                {
                                    CompanyId = comp.CompanyId,

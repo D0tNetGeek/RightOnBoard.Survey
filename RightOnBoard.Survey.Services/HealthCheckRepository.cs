@@ -35,14 +35,14 @@ namespace RightOnBoard.Survey.Services
             return healthChecks.Select(x=> new SurveyIteration
             {
                 Id = x.Id,
-                SurveyInfo = new SurveyInfo
-                {
-                    SurveyId = x.SurveyId
-                },
+                //SurveyInfo = new SurveyInfo
+                //{
+                SurveyId = x.SurveyId,
+                //},
                 IterationName = x.IterationName,
                 OpenDateTime = x.OpenDateTime,
-                CloseDateTime = x.CloseDateTime,
-                SurveyStatus = x.SurveyStatus
+                CloseDateTime = x.CloseDateTime//,
+                //SurveyStatus = x.SurveyStatus
             });
         }
     }

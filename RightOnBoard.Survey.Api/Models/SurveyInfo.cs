@@ -5,7 +5,6 @@ namespace RightOnBoard.Survey.Api.Models
 {
     public class SurveyInfo
     {
-        public string SurveyId { get; set; }
         public string Name { get; set; }
         public string Description { get; set; }
         public string WelcomeMessage { get; set; }
@@ -14,6 +13,6 @@ namespace RightOnBoard.Survey.Api.Models
         public DateTime? EndDate { get; set; }
         public DateTime? PublicationDate { get; set; }
         public DateTime? ExpirationDate { get; set; }
-        public string CompanyName { get; set; }
+        public string CompanyId { get; set; }
     }
 }

@@ -30,7 +30,7 @@ namespace RightOnBoard.Survey.Api.Controllers
             var list = (from qvm in questions
                         select new QuestionnaireViewModel
                         {
-                            SurveyInfo = new SurveyInfo
+                            SurveyInfo = new SurveyViewModel
                             {
                                 SurveyId = qvm.SurveyInfo.SurveyId,
                                 Name = qvm.SurveyInfo.Name,
@@ -82,7 +82,7 @@ namespace RightOnBoard.Survey.Api.Controllers
 
             var list = new QuestionnaireViewModel
             {
-                SurveyInfo = new SurveyInfo
+                SurveyInfo = new SurveyViewModel
                 {
                     SurveyId = questions.SurveyInfo.SurveyId,
                     Name = questions.SurveyInfo.Name,

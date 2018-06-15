@@ -1,9 +1,8 @@
 ﻿using System;
-using System.Collections.Generic;
 
-namespace RightOnBoard.Survey.Services.Entities
+namespace RightOnBoard.Survey.Data.Models
 {
-    public class SurveyInfo
+    public class SurveyViewModel
     {
         public string SurveyId { get; set; }
         public string Name { get; set; }
@@ -14,7 +13,6 @@ namespace RightOnBoard.Survey.Services.Entities
         public DateTime? EndDate { get; set; }
         public DateTime? PublicationDate { get; set; }
         public DateTime? ExpirationDate { get; set; }
-        public string CompanyId { get; set; }
         public string CompanyName { get; set; }
     }
 }

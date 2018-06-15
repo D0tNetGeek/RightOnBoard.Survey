@@ -2,7 +2,7 @@
 {
     public class SurveyCompany
     {
-        public string SurveyCompanyId { get; set; }
+        public string Id { get; set; }
         public string SurveyId { get; set; }
         public string CompanyId { get; set; }
     }

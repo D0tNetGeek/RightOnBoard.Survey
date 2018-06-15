@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Authentication.JwtBearer;
+﻿using AutoMapper;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Diagnostics;
 using Microsoft.AspNetCore.Hosting;
@@ -79,6 +80,7 @@ namespace RightOnBoard.Survey.Api
 
             services.AddScoped<ISurveyRepository, SurveyRepository>();
             services.AddScoped<ICompanyRepository, CompanyRepository>();
+            services.AddScoped<IIterationRepository, IterationRepository>();
 
             //services.AddScoped<ITokenStoreService, TokenStoreService>();
             //services.AddScoped<ITokenValidatorService, TokenValidatorService>();
@@ -156,7 +158,7 @@ namespace RightOnBoard.Survey.Api
                 options.Filters.Add(new AutoValidateAntiforgeryTokenAttribute());
             });
 
-            //services.AddAutoMapper();
+            services.AddAutoMapper();
             //services.AddMvc();//.AddFluentValidation(fv => fv.RegisterValidatorsFromAssemblyContaining<Startup>());
         }
 
