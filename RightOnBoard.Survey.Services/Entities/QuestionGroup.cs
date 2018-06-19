@@ -8,5 +8,6 @@ namespace RightOnBoard.Survey.Services.Entities
         public string QuestionGroupName { get; set; }
         public string QuestionGroupDescription { get; set; }
         public List<Driver> Drivers { get; set; }
+        public string SurveyId { get; set; }
     }
 }

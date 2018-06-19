@@ -81,6 +81,7 @@ namespace RightOnBoard.Survey.Api
             services.AddScoped<ISurveyRepository, SurveyRepository>();
             services.AddScoped<ICompanyRepository, CompanyRepository>();
             services.AddScoped<IIterationRepository, IterationRepository>();
+            services.AddScoped<IQuestionGroupRepository, QuestionGroupRepository>();
 
             //services.AddScoped<ITokenStoreService, TokenStoreService>();
             //services.AddScoped<ITokenValidatorService, TokenValidatorService>();

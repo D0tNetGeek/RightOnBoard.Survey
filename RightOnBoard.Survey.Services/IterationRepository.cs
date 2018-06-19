@@ -24,38 +24,33 @@ namespace RightOnBoard.Survey.Services
         {
             try
             {
-                //var surveyModel = _mapper.Map<Data.Models.SurveyViewModel>(survey);
-
-                var iterationId = Guid.NewGuid().ToString();
-
-                var iterationModel = (from iteration in iterationInfo
+                List<Data.Models.SurveyIteration> iterationModel = (from iteration in iterationInfo
                                       select new Data.Models.SurveyIteration
                                       {
-                                          Id = iterationId,
+                                          Id = iteration.Id,
                                           SurveyId = iteration.SurveyId,
                                           IterationName = iteration.IterationName,
                                           OpenDateTime = iteration.OpenDateTime,
                                           CloseDateTime = iteration.CloseDateTime,
                                           ReminderDateTime = iteration.ReminderDateTime,
-                                          ReminderFrequency = iteration.ReminderFrequency,
-                                          SurveyStatus = iteration.SurveyId
+                                          ReminderFrequency = iteration.ReminderFrequency
                                       }).ToList();
 
-                //var result = await _dbContext.SurveyIteration.AddRangeAsync(iterationModel);
+                await _dbContext.SurveyIteration.AddRangeAsync(iterationModel);
 
-                //if (result.State == Microsoft.EntityFrameworkCore.EntityState.Added)
+                //if (result)
                 //{
-                //  await _dbContext.SaveChangesAsync();
+                    await _dbContext.SaveChangesAsync();
 
-                var response = true;
-
-                    return response;
+                    //return result;
                 //}
+
+                return true;
 
             }
             catch (Exception e)
             {
-                throw e;
+                return false;
             }
         }
     }

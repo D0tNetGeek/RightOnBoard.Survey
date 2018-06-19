@@ -11,6 +11,6 @@ namespace RightOnBoard.Survey.Data.Models
         public DateTime CloseDateTime { get; set; }
         public DateTime? ReminderDateTime { get; set; }
         public int ReminderFrequency { get; set; }
-        public string SurveyStatus { get; set; }
+        //public string SurveyStatus { get; set; }
     }
 }
